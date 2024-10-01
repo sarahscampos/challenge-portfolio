@@ -4,88 +4,247 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarah Campos</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <p>Sarah Campos</p>
-        <li><a href="#sobre-mim">Sobre mim</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>  
+  <header class="cabecalho">
+    <p>&lt; Sarah Campos /&gt;</p>
+    <ul class="cabecalho__lista">
+      <li><a href="#sobre-mim">Sobre mim</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#formacao">Formação</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>  
     </nav>
   </header>
+
   <section class="apresentacao">
-    <h1>Olá, meu nome é Sarah Campos e sou desenvolvedora front-end</h1>
-    <p>Sou estudante de Ciência da Computação no Cefet/RJ e atualmente estou participando do projeto Oracle ONE na Alura.</p>
-    <a href="https://github.com/sarahscampos" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/sarah-campos-dev/" target="_blank">LinkedIn</a>
-    <a href="sarah-curriculo.pdf" download="sarah-curriculo">Currículo</a> <!--curriculo pdf-->
+    <div class="apresentacao__textos">
+      <h1>Olá, meu nome é Sarah Campos e sou desenvolvedora front-end</h1>
+      <p>Sou estudante de Ciência da Computação no Cefet/RJ e atualmente estou participando do projeto Oracle ONE na Alura.</p>
+      <div class="apresentacao__redes">
+        <div class="apresentacao__link">
+          <a href="https://github.com/sarahscampos" target="_blank">GitHub</a>
+          <img src="assets/img/seta-vertical-cima.svg" alt="">
+        </div>
+        <div class="apresentacao__link">
+          <a href="https://www.linkedin.com/in/sarah-campos-dev/" target="_blank">LinkedIn</a>
+          <img src="assets/img/seta-vertical-cima.svg" alt="">
+        </div>
+        <div class="apresentacao__link">
+          <a href="assets/sarah-curriculo.pdf" download="sarah-curriculo">Currículo</a> <!--curriculo pdf-->
+          <img src="assets/img/seta-vertical-cima.svg" alt="">
+        </div>
+      </div>
+    </div>
     <img src="assets/img/sobre_mim_foto.png" alt="foto da Sarah Campos">
   </section>
-  <section id="sobre-mim" class="">
+
+  <section id="sobre-mim">
     <h2>Sobre mim</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga est magnam quidem dolor voluptas dicta, quos distinctio pariatur dolorem commodi impedit tempore provident fugit velit hic voluptates repellat expedita placeat.</p>
+    <div class="sobre-textos">
+      <p>
+        Meu objetivo é aprender cada vez mais sobre a área de computação, e desenvolver minhas habilidades em criação de sites e aplicações Web.
+       </p>
+      <p>
+        Durante meu aprendizado tive a oportunidade de conhecer áreas como criação de jogos digitais, a qual me introduziu para Modelagem 3D, Animação 3D, Pixel Art, Criação de Interfaces e Texturização. Posteriormente, trabalhei como Freelancer na elaboração de publicidades para redes sociais.
+      </p>
+      <p>
+        Atualmente, me interesso em contribuir com tudo que aprendi durante a minha trajetória e aprender com novas experiências.
+      </p>
+      <p>
+        Meu próximo passo é me desenvolver e me aprofundar nas linguagens de programação utilizadas frequentemente na elaboração e manutenção de softwares e sistemas. Assim como aprender as linguagens utilizadas no desenvolvimento Web.
+      </p>
+      <p>
+        Meu interesse em estudar e atuar na área tecnológica vem desde quando eu era criança ao ganhar meu primeiro videogame. Lembro da minha curiosidade em entender como aquilo funcionava e como era feito. Desde então, é recorrente a sensação de querer entender como o universo tecnológico funciona e como usá-lo para transformar e ajudar a sociedade.
+      </p>
+    </div>
   </section>
+
   <section id="skills">
     <h2>Skills</h2>
-    <div>
-      <img src="" alt="">
+    <div class="skills__container">
+
+      <div class="skills__item">
+        <img src="assets/img/icons/iconhtml.svg" alt="">
+        <p>HTML5</p>
+      </div>
+      
+      <div class="skills__item">
+        <img src="assets/img/icons/iconcss.svg" alt="">
+        <p>CSS3</p>
+      </div>
+     
+      <div class="skills__item">
+        <img src="assets/img/icons/iconjs.svg" alt="">
+        <p>JavaScript</p>
+      </div>
+
+      <div class="skills__item">
+        <img src="assets/img/icons/iconreact.svg" alt="">
+        <p>React</p>
+      </div>
+
+      <div class="skills__item">
+        <img src="assets/img/icons/iconfigma.svg" alt="">
+        <p>Figma</p>
+      </div>
+
+      <div class="skills__item">
+        <img src="assets/img/icons/icongithub.svg" alt="">
+        <p>GitHub</p>
+      </div>
+
     </div>
   </section>
+
   <section id="hobbies">
     <h2>Hobbies</h2>
-    <div></div>
-      <img src="" alt="">
+    <div class="skills__container">
+      <div class="skills__item">
+        <img src="assets/img/icons/iconpaint.svg" alt="">
+        <p>Desenhar</p>
+      </div>
+
+      <div class="skills__item">
+        <img src="assets/img/icons/iconcontroller.svg" alt="">
+        <p>Jogar videogame</p>
+      </div>
+      <div class="skills__item">
+        <img src="assets/img/icons/iconreading.svg" alt="">
+        <p>Ler</p>
+      </div>
+
+      <div class="skills__item">
+        <img src="assets/img/icons/iconpencil.svg" alt="">
+        <p>Escrever</p>
+      </div>
+      
+      <div class="skills__item">
+        <img src="assets/img/icons/iconmusic.svg" alt="">
+        <p>Ouvir música</p>
+      </div>
+
+      <div class="skills__item">
+        <img src="assets/img/icons/icontv.svg" alt="">
+        <p>Assistir filmes</p>
+      </div>
+
     </div>
   </section>
+
   <section id="formacao">
     <h2>Formação acadêmica e cursos</h2>
-    <div></div>
-      <img src="" alt="">
+    <div class="formacao__container">
+      <div class="formacao__conteudo">
+        <div class="formacao__item">
+          <img src="assets/img/icons/iconcefet.svg" alt="">
+        </div>
+        <h3>Ciência da Computação</h3>
+        <p>Em andamento - CEFET/RJ</p>
+      </div>
+
+      <div class="formacao__conteudo">
+        <div class="formacao__item">
+          <img src="assets/img/icons/Oracle-ONE.svg" alt="">
+        </div>
+        <h3>Programa ONE</h3>
+        <p>Em andamento - Oracle e Alura</p>
+      </div>
+
+      <div class="formacao__conteudo">
+        <div class="formacao__item">
+          <img src="assets/img/icons/iconalura.svg" alt="">
+        </div>
+        <h3>Figma</h3>
+        <p>2024 - Alura</p>
+      </div>
+
+      <div class="formacao__conteudo">
+        <div class="formacao__item">
+          <img src="assets/img/icons/iconalura.svg" alt="">
+        </div>
+        <h3>HTML e CSS para projetos web</h3>
+        <p>2023 - Alura</p>
+      </div>
+
+      <div class="formacao__conteudo">
+        <div class="formacao__item">
+          <img src="assets/img/icons/iconalura.svg" alt="">
+        </div>
+        <h3>CSS: Aprofunde em estilos</h3>
+        <p>2023 - Alura</p>
+      </div>
+
+    
     </div>
   </section>
+
   <section id="projetos">
     <h2>Projetos</h2>
-    <img src="" alt="">
-    <div>
-      <h3>Decodificador de texto</h3>
-      <p>Challenge programa ONE feito com HTML, CSS e JavaScript</p>
-      <a href="">Repositório</a>
-      <a href="">Acessar site</a>
+    <div class="projetos__container">
+      <img src="assets/img/decodificador.png" alt="">
+      <div class="projetos__textos">
+        <h3>Decodificador de texto</h3>
+        <p>Challenge do programa ONE feito com HTML, CSS e JavaScript</p>
+        <div class="projeto-links">
+          <a href="https://github.com/sarahscampos/decodificador-de-texto" target="_blank">Repositório</a>
+          <a href="https://sarahscampos.github.io/decodificador-de-texto/" target="_blank">Acessar site</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="projetos__container life-is-strange">
+      <div class="projetos__textos">
+        <h3>Página de fã - Life is Strange</h3>
+        <p>Página feita com HTML, CSS e JavaScript</p>
+        <div class="projeto-links">
+          <a href="https://github.com/sarahscampos/life-is-strange-fanpage" target="_blank">Repositório</a>
+          <a href="https://life-is-strange-fanpage.vercel.app/" target="_blank">Acessar site</a>
+        </div>
+      </div>
+      <img src="assets/img/lis.png" alt="">
+    </div>
+
+    <div class="projetos__container">
+      <img src="assets/img/blog.png" alt="">
+      <div class="projetos__textos">
+        <h3>Blog Bit Fields</h3>
+        <p>Página feita com ReactJs + React Router</p>
+        <div class="projeto-links">
+          <a href="https://github.com/sarahscampos/blog-bcc?tab=readme-ov-file" target="_blank">Repositório</a>
+          <a href="https://blog-bcc.vercel.app/" target="_blank">Acessar site</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contato">
+    <img src="assets/img/telefone.png" alt="">
+    <div class="contato__textos">
+      <h2>Contato</h2>
+      <p>Quer entrar em contato comigo?</p>
+      <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+      <form  class="contato__formulario">
+          <input type="text" name="name" id="name"  placeholder="Nome" required>
+
+          <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+
+          <input type="text" placeholder="Assunto" required>
+
+          <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+
+          <input type="submit" value="Enviar mensagem" class="submit-botao">
+      </form>
     </div>
   </section>
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Quer entrar em contato comigo?</p>
-    <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-    <form action="">
-      <div>
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name" required>
-      </div>
-      <div>
-        <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
-      </div>
-      <div>
-        <input type="text" placeholder="Assunto">
-      </div>
-      <div>
-        <input type="text" placeholder="Mensagem">
-      </div>
-      <div>
-        <input type="submit" value="Enviar mensagem">
-      </div>
-    </form>
-  </section>
+  
   <footer>
-    <p>Desenvolvido por Sarah Campos</p>
-    <p>2024</p>
+    <p>Desenvolvido por Sarah Campos • 2024</p>
   </footer>
 </body>
 </html>

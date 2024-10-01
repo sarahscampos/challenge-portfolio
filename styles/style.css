@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+ --cor-secundaria: #855fbd;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #464646;
+  background-color: #f5f5f5;
+
+}
+
+/* header */
+
+.cabecalho {
+  padding: 2rem 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho p {
+  font-weight: 700;
+  color: var(--cor-secundaria);
+}
+
+
+.cabecalho__lista {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 500;
+}
+
+.cabecalho__lista li a{
+  text-decoration: none;
+  color: #464646;
+}
+
+.cabecalho__lista li a[href="#contato"] {
+  color: white;
+  background-color: var(--cor-secundaria);
+  border-radius: .3rem;
+  padding: .5rem .8rem;
+  transition: background-color .2s ;
+}
+
+.cabecalho__lista li a[href="#contato"]:hover {
+  background-color: #604588;
+}
+
+
+/* apresentação */
+
+.apresentacao  {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 12rem;
+  margin: 5rem 0;
+  justify-content: center;
+}
+
+.apresentacao img {
+  border-radius: 50%;
+  width: 30%;
+}
+
+.apresentacao__textos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 70%;
+  justify-content: center;
+}
+
+
+.apresentacao__textos h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.apresentacao__textos p {
+  font-size: 1.3rem;
+}
+
+.apresentacao__redes {
+  display: flex;
+  gap: 2rem;
+}
+
+.apresentacao__link {
+
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.apresentacao__link a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #464646;
+}
+
+
+/* sobre mim */
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+#sobre-mim h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 3rem 0;
+  text-align: left;
+}
+
+#sobre-mim {
+  padding: 2rem 12rem 5rem;
+  background-color: var(--cor-secundaria);
+  color: #f5f5f5;
+}
+
+.sobre-textos {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+/* skills */
+
+#skills { 
+  padding: 2rem 12rem;
+}
+
+#hobbies {
+  padding: 2rem 12rem 5rem;
+}
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  gap: 3rem;
+  justify-content: center;
+
+}
+
+.skills__item {
+  background-color: white;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: end;
+  padding: 1rem;
+  gap: 1rem;
+
+}
+
+.skills__item img {
+  width: 2rem;
+}
+
+.skills__item p {
+  font-weight: 700;
+}
+
+/* formacao */
+
+#formacao {
+  background-color: var(--cor-secundaria);
+  color: #f5f5f5;
+  padding: 2rem 12rem 5rem;
+}
+
+.formacao__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 18rem);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#formacao h2 {
+  margin: 3rem 0;
+}
+
+
+h3{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: .8rem 0;
+}
+
+.formacao__item {
+  box-sizing: border-box;
+  background-color: white;
+  width: 18rem;
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.formacao__item img {
+  width: 10rem;
+}
+
+
+/* projetos */
+#projetos {
+  padding: 2rem 12rem;
+}
+
+.projetos__container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 5rem;
+  justify-content: center;
+  text-align: left;
+}
+
+
+.projetos__container img {
+  width: 50%;
+  border: 3px solid var(--cor-secundaria);
+
+}
+
+
+.projeto-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.projeto-links a {
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+.projeto-links a:nth-child(1){
+  color: var(--cor-secundaria);
+  background-color: transparent;
+  border: 2px solid var(--cor-secundaria);
+}
+
+.projeto-links a:nth-child(2){
+  color: white;
+  background-color: var(--cor-secundaria);
+  border: 2px solid var(--cor-secundaria);
+}
+
+
+/* contato */
+#contato {
+  background-color: var(--cor-secundaria);
+  color: #f5f5f5;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 12rem 5rem;
+}
+
+.contato__textos {
+  width: 50%;
+}
+
+#contato h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.contato__formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contato__formulario input {
+  font-family: 'Raleway', sans-serif;
+  padding: 1rem;
+}
+
+#mensagem {
+  resize: none;
+  height: 100px;
+  font-family: 'Raleway', sans-serif;
+  padding: 1rem;
+}
+
+.submit-botao {
+  color: white;
+  background-color: #2d2141;
+  border: none;
+  transition: background-color .2s;
+  font-size: 1rem;
+}
+
+.submit-botao:hover {
+  background-color: rgb(78, 57, 110);
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 2rem 12rem;
+}
+
+@media (max-width: 1200px) {
+  .cabecalho__lista li a {
+    display: none;
+  }
+  .cabecalho__lista li a[href="#contato"] {
+    display: block;
+  }
+
+  .sobre-textos {
+    width: 100%;
+  }
+
+  .apresentacao__textos {
+    width: 100%;
+  }
+
+
+
+}
+
+@media (max-width: 900px) {
+  .cabecalho, .apresentacao, #sobre-mim, #skills, #hobbies, #formacao, #projetos, #contato, footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .apresentacao {
+    flex-direction: column;
+    gap: 3rem;
+
+  }
+
+  
+  .apresentacao__textos h1 {
+    font-size: 2rem;
+  }
+
+  .apresentacao__redes {
+    justify-content: center;
+  }
+
+  .projetos__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+ 
+  .projetos__textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .life-is-strange{
+    flex-direction: column-reverse;
+  }
+
+  #contato img {
+    display: none;
+  }
+
+  .contato__textos {
+    width: 100%;
+  }
+
+}
+
+
+
+
