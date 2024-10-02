@@ -91,10 +91,15 @@ body {
 }
 
 .apresentacao__link {
-
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: .4rem;
+  transition: transform .2s;
+}
+
+.apresentacao__link:hover {
+  transform: scale(1.1);
 }
 
 .apresentacao__link a {
@@ -114,9 +119,6 @@ h2 {
 }
 
 #sobre-mim h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 3rem 0;
   text-align: left;
 }
 
@@ -192,9 +194,6 @@ p {
   justify-content: center;
 }
 
-#formacao h2 {
-  margin: 3rem 0;
-}
 
 
 h3{
@@ -262,6 +261,7 @@ h3{
   border: 2px solid var(--cor-secundaria);
 }
 
+
 .projeto-links a:nth-child(2){
   color: white;
   background-color: var(--cor-secundaria);
@@ -285,7 +285,6 @@ h3{
 
 #contato h2 {
   text-align: left;
-  margin-bottom: 1rem;
 }
 
 .contato__formulario {
@@ -325,7 +324,6 @@ h3{
 }
 
 footer {
-  margin-top: 2rem;
   text-align: center;
   font-weight: 500;
   padding: 2rem 12rem;

@@ -1,3 +1,5 @@
+import ScrollSuave from "./scroll-suave.js";
+
 const nomeInput = document.querySelector('input[name="name"]');
 const emailInput = document.querySelector('input[name="email"]');
 const assuntoInput = document.querySelector('input[name="assunto"]');
@@ -20,3 +22,7 @@ mensagemTextArea.addEventListener('input', verificarCamposPreenchidos);
 
 
 verificarCamposPreenchidos();
+
+
+const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
+scrollSuave.init();
