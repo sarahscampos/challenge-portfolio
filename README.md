@@ -7,7 +7,7 @@
 # Portfólio
 Criado com o objetivo de compartilhar mais sobre mim e meus projetos :)
 
-[Acesse o portfólio](https://sarahscampos.github.io)
+[Acesse o portfólio](https://sarahscampos.github.io/challenge-portfolio/)
 
 ## Tecnologias usadas
 * HTML5
