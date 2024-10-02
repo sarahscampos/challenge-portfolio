@@ -13,6 +13,7 @@ Criado com o objetivo de compartilhar mais sobre mim e meus projetos :)
 * HTML5
 * CSS3
 * JavaScript
+* Formspree
 
 Possui responsividade para diferentes tamanhos de tela.
 
