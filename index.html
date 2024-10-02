@@ -229,14 +229,14 @@
       <h2>Contato</h2>
       <p>Quer entrar em contato comigo?</p>
       <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
-      <form  class="contato__formulario">
-          <input type="text" name="name" id="name"  placeholder="Nome" required>
+      <form action="https://formspree.io/f/xvgpenby" method="POST" class="contato__formulario">
+          <input type="text" name="name" id="name"  placeholder="Nome" required maxlength="50">
 
           <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
 
-          <input type="text" placeholder="Assunto" required>
+          <input type="text" name="assunto" placeholder="Assunto" required maxlength="50">
 
-          <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+          <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required maxlength="300"></textarea>
 
           <input type="submit" value="Enviar mensagem" class="submit-botao">
       </form>
@@ -246,5 +246,6 @@
   <footer>
     <p>Desenvolvido por Sarah Campos • 2024</p>
   </footer>
+  <script src="scripts/script.js"></script>
 </body>
 </html>
